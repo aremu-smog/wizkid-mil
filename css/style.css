@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #e9e6e1;
+    font-family: sans-serif;
+}
+
+/* Landing Page */
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid_Desktop.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 5px solid #9da49d;
+}
+
+.landing .container{
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: flex-start;
+}
+
+.landing .wizkid{
+    width: 300px;
+}
+.landing .madeinlagos{
+    width: 450px;
+    margin-top: -30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-link{
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border: 1px solid black;
+    display: inline-block;
+    transition-duration: 0.3s;
+}
+
+.button-link:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1130px){
+    .landing{
+
+        background-position: 50% 70%;
+    }
+}
+@media screen and (max-width: 767px){
+    .landing{
+        background-size: cover;
+        background-position: center center;
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),  #ddd5c2), url(../img/Wizkid_Mobile.jpg);
+        height: calc(100vh - 7.5em);
+        align-items: stretch;
+        padding-top: 5em;
+        padding-bottom: 2.5em;
+    }
+    .landing .container{
+        width: 100%;
+        height: inherit;
+        justify-content: space-between;
+    }
+    .landing .wizkid{
+        width: 70%;
+    }
+    .landing .madeinlagos{
+        width: 90%;
+        margin-top: -30px;
+    }
+}
